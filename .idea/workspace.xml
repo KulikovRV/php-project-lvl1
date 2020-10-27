@@ -22,8 +22,7 @@
     <list default="true" id="b9c337ee-d577-4ce2-ae00-0d7dc24ff1a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/php-project-lvl1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-project-lvl1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/brain-games.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-games" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/brain-games" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-games" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +36,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/php-cli-tools" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1jQagEKMapmveCC7CAeTMcD5F1K" />
   <component name="ProjectViewState">
@@ -60,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603738878179</updated>
       <workItem from="1603738879223" duration="2753000" />
-      <workItem from="1603826145853" duration="1528000" />
+      <workItem from="1603826145853" duration="4628000" />
     </task>
     <servers />
   </component>
