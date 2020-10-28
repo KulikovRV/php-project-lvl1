@@ -2,4 +2,4 @@
 ![Actions Status](/workflows/hexlet-check/badge.svg)
 
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
-![PHP CI](https://github.com/KulikovRV/php-project-lvl1/workflows/linter%20phpcs/badge.svg?branch=main)
+![phpcs](https://github.com/KulikovRV/php-project-lvl1/workflows/phpcs/badge.svg?branch=main)
