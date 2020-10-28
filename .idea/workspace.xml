@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9c337ee-d577-4ce2-ae00-0d7dc24ff1a3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/hexlet-check.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/hexlet-check.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cli.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cli.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603738878179</updated>
       <workItem from="1603738879223" duration="2753000" />
-      <workItem from="1603826145853" duration="9995000" />
+      <workItem from="1603826145853" duration="10507000" />
     </task>
     <servers />
   </component>
