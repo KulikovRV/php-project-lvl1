@@ -5,7 +5,7 @@ namespace Brain\Games\Even;
 use function cli\line;
 use function cli\prompt;
 
-function startBrainEven()
+function verificationEven()
 {
     line('Answer "yes" if the number is even, otherwise answer "no".');
     $winStreak = 0;
@@ -20,7 +20,7 @@ function startBrainEven()
             line('Correct!');
             $winStreak++;
         } else {
-            line("{$answer} is wrong answer ;(. Correct answer was {$correctAnswer}.");
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
             return line("Let's try again, Bill!");
         }
     }

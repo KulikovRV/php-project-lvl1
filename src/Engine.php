@@ -1,11 +1,11 @@
 <?php
 
-namespace Brain\Games\Cli;
+namespace Brain\Games\Engine;
 
 use function cli\line;
 use function cli\prompt;
 
-function startBrainGames()
+function runGame()
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
