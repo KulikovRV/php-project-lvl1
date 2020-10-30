@@ -1,6 +1,8 @@
 {
     "name": "hexlet/code",
-    "bin": ["bin/php-package"],
+    "bin": ["bin/php-package",
+            "bin/brain-even"
+    ],
     "authors": [
         {
             "name": "Roman Kulikov",
@@ -14,7 +16,8 @@
     },
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/Even.php"
         ]
     },
     "require-dev": {
