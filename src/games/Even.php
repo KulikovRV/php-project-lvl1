@@ -2,17 +2,19 @@
 
 namespace Brain\Games\Even;
 
-function printRules()
+use function cli\line;
+
+function printRulesEven()
 {
-    return 'Answer "yes" if the number is even, otherwise answer "no".';
+    return line('Answer "yes" if the number is even, otherwise answer "no".');
 }
 
-function addQuestion()
+function addQuestionEven()
 {
     return rand(1, 99);
 }
 
-function calculateCorrectAnswer($question)
+function calculateCorrectAnswerEven($question)
 {
     return $question % 2 === 0 ? 'yes' : 'no';
 }
