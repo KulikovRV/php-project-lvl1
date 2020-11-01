@@ -33,20 +33,4 @@ function runGame($game)
             }
     }
     return line("Congratulations, %s!", $name);
-
-
-    /*while ($winStreak < 3) {
-        $question = addQuestion();
-        $correctAnswer = calculateCorrectAnswer($question);
-        line("Question: %s", $question);
-        $answer = prompt('Your answer');
-        if ($answer === $correctAnswer) {
-            line('Correct!');
-            $winStreak++;
-        } else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
-            return line("Let's try again, %s!", $name);
-        }
-    }
-    return line("Congratulations, %s!", $name);*/
 }
