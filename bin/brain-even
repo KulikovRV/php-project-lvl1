@@ -11,6 +11,5 @@
  }
 
 use function Brain\Games\Engine\runGame;
-use function Brain\Games\Even\verificationEven;
 
-runGame(verificationEven());
+runGame();
