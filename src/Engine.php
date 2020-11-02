@@ -37,6 +37,7 @@ function runGame($game)
                     return line("Let's try again, %s!", $name);
                 }
             }
+            // no break
         case 'brain-calc':
             printRulesCalc();
             while ($winStreak < 3) {
@@ -52,6 +53,7 @@ function runGame($game)
                     return line("Let's try again, %s!", $name);
                 }
             }
+            // no break
         case 'brain-gcd':
             printRulesGcd();
             while ($winStreak < 3) {
