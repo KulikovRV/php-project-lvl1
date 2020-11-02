@@ -1,7 +1,8 @@
 {
     "name": "hexlet/code",
     "bin": ["bin/php-package",
-            "bin/brain-even"
+            "bin/brain-even",
+            "bin/brain-calc"
     ],
     "authors": [
         {
@@ -16,6 +17,7 @@
     },
     "autoload": {
         "files": [
+            "src/games/Calc.php",
             "src/games/Even.php",
             "src/Engine.php"
         ]

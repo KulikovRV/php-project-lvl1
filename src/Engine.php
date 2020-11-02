@@ -7,6 +7,9 @@ use function cli\prompt;
 use function Brain\Games\Even\printRulesEven;
 use function Brain\Games\Even\addQuestionEven;
 use function Brain\Games\Even\calculateCorrectAnswerEven;
+use function Brain\Games\Calc\printRulesCalc;
+use function Brain\Games\Calc\addQuestionCalc;
+use function Brain\Games\Calc\calculateCorrectAnswerCalc;
 
 function runGame($game)
 {
@@ -23,7 +26,22 @@ function runGame($game)
                 $correctAnswer = calculateCorrectAnswerEven($question);
                 line("Question: %s", $question);
                 $answer = prompt('Your answer');
-                if ($answer === $correctAnswer) {
+                if ($answer == $correctAnswer) {
+                    line('Correct!');
+                    $winStreak++;
+                } else {
+                    line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
+                    return line("Let's try again, %s!", $name);
+                }
+            }
+        case 'brain-calc':
+            printRulesCalc();
+            while ($winStreak < 3) {
+                $question = addQuestionCalc();
+                $correctAnswer = calculateCorrectAnswerCalc($question);
+                line("Question: %s", $question);
+                $answer = prompt('Your answer');
+                if ($answer == $correctAnswer) {
                     line('Correct!');
                     $winStreak++;
                 } else {

@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9c337ee-d577-4ce2-ae00-0d7dc24ff1a3" name="Default Changelist" comment="" />
+    <list default="true" id="b9c337ee-d577-4ce2-ae00-0d7dc24ff1a3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,9 +119,10 @@
       <screen x="0" y="23" width="1370" height="877" />
     </state>
     <state x="272" y="123" key="#PHP_CodeSniffer/0.23.1370.877@0.23.1370.877" timestamp="1603911746324" />
-    <state x="398" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604082921278">
-      <screen x="0" y="23" width="1370" height="877" />
+    <state x="397" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604350047897">
+      <screen x="0" y="23" width="1366" height="877" />
     </state>
+    <state x="397" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1366.877@0.23.1366.877" timestamp="1604350047897" />
     <state x="398" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1370.877@0.23.1370.877" timestamp="1604082921278" />
     <state x="422" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604091533388">
       <screen x="0" y="23" width="1370" height="877" />
@@ -150,9 +156,10 @@
     </state>
     <state width="1327" height="231" key="GridCell.Tab.0.right/0.23.1366.877@0.23.1366.877" timestamp="1603958368198" />
     <state width="1327" height="231" key="GridCell.Tab.0.right/0.23.1370.877@0.23.1370.877" timestamp="1603911794009" />
-    <state x="504" y="392" key="NewPhpFileDialog" timestamp="1604090815648">
-      <screen x="0" y="23" width="1370" height="877" />
+    <state x="503" y="392" key="NewPhpFileDialog" timestamp="1604347620454">
+      <screen x="0" y="23" width="1366" height="877" />
     </state>
+    <state x="503" y="392" key="NewPhpFileDialog/0.23.1366.877@0.23.1366.877" timestamp="1604347620454" />
     <state x="504" y="392" key="NewPhpFileDialog/0.23.1370.877@0.23.1370.877" timestamp="1604090815648" />
     <state x="186" y="100" key="SettingsEditor" timestamp="1603744120457">
       <screen x="0" y="23" width="1373" height="877" />
