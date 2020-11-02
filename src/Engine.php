@@ -10,6 +10,9 @@ use function Brain\Games\Even\calculateCorrectAnswerEven;
 use function Brain\Games\Calc\printRulesCalc;
 use function Brain\Games\Calc\addQuestionCalc;
 use function Brain\Games\Calc\calculateCorrectAnswerCalc;
+use function Brain\Games\Gcd\printRulesGcd;
+use function Brain\Games\Gcd\addQuestionGcd;
+use function Brain\Games\Gcd\calculateCorrectAnswerGcd;
 
 function runGame($game)
 {
@@ -39,6 +42,21 @@ function runGame($game)
             while ($winStreak < 3) {
                 $question = addQuestionCalc();
                 $correctAnswer = calculateCorrectAnswerCalc($question);
+                line("Question: %s", $question);
+                $answer = prompt('Your answer');
+                if ($answer == $correctAnswer) {
+                    line('Correct!');
+                    $winStreak++;
+                } else {
+                    line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
+                    return line("Let's try again, %s!", $name);
+                }
+            }
+        case 'brain-gcd':
+            printRulesGcd();
+            while ($winStreak < 3) {
+                $question = addQuestionGcd();
+                $correctAnswer = calculateCorrectAnswerGcd($question);
                 line("Question: %s", $question);
                 $answer = prompt('Your answer');
                 if ($answer == $correctAnswer) {

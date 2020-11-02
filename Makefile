@@ -1,6 +1,8 @@
 install:
 		composer install
 
+brain-gcd:
+		php bin/brain-gcd
 
 brain-calc:
 		php bin/brain-calc

@@ -119,9 +119,10 @@
       <screen x="0" y="23" width="1370" height="877" />
     </state>
     <state x="272" y="123" key="#PHP_CodeSniffer/0.23.1370.877@0.23.1370.877" timestamp="1603911746324" />
-    <state x="397" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604350047897">
-      <screen x="0" y="23" width="1366" height="877" />
+    <state x="396" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604351030066">
+      <screen x="0" y="23" width="1361" height="877" />
     </state>
+    <state x="396" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1361.877@0.23.1361.877" timestamp="1604351030066" />
     <state x="397" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1366.877@0.23.1366.877" timestamp="1604350047897" />
     <state x="398" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1370.877@0.23.1370.877" timestamp="1604082921278" />
     <state x="422" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604091533388">
@@ -156,9 +157,10 @@
     </state>
     <state width="1327" height="231" key="GridCell.Tab.0.right/0.23.1366.877@0.23.1366.877" timestamp="1603958368198" />
     <state width="1327" height="231" key="GridCell.Tab.0.right/0.23.1370.877@0.23.1370.877" timestamp="1603911794009" />
-    <state x="503" y="392" key="NewPhpFileDialog" timestamp="1604347620454">
-      <screen x="0" y="23" width="1366" height="877" />
+    <state x="501" y="392" key="NewPhpFileDialog" timestamp="1604350896919">
+      <screen x="0" y="23" width="1361" height="877" />
     </state>
+    <state x="501" y="392" key="NewPhpFileDialog/0.23.1361.877@0.23.1361.877" timestamp="1604350896919" />
     <state x="503" y="392" key="NewPhpFileDialog/0.23.1366.877@0.23.1366.877" timestamp="1604347620454" />
     <state x="504" y="392" key="NewPhpFileDialog/0.23.1370.877@0.23.1370.877" timestamp="1604090815648" />
     <state x="186" y="100" key="SettingsEditor" timestamp="1603744120457">
