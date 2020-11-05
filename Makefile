@@ -1,6 +1,9 @@
 install:
 		composer install
 
+brain-prime:
+		php bin/brain-prime
+
 brain-progression:
 		php bin/brain-progression
 
