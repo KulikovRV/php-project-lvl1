@@ -13,6 +13,9 @@ use function Brain\Games\Calc\calculateCorrectAnswerCalc;
 use function Brain\Games\Gcd\printRulesGcd;
 use function Brain\Games\Gcd\addQuestionGcd;
 use function Brain\Games\Gcd\calculateCorrectAnswerGcd;
+use function Brain\Games\Progression\printRulesProgression;
+use function Brain\Games\Progression\addQuestionProgression;
+use function Brain\Games\Progression\calculateCorrectAnswerProgression;
 
 function runGame($game)
 {
@@ -69,6 +72,23 @@ function runGame($game)
                     return line("Let's try again, %s!", $name);
                 }
             }
+            // no break
+        case 'brain-progression':
+            printRulesProgression();
+            while ($winStreak < 3) {
+                $question = addQuestionProgression();
+                $correctAnswer = calculateCorrectAnswerProgression($question);
+                line("Question: %s", $question);
+                $answer = prompt('Your answer');
+                if ($answer == $correctAnswer) {
+                    line('Correct!');
+                    $winStreak++;
+                } else {
+                    line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
+                    return line("Let's try again, %s!", $name);
+                }
+            }
+            // no break
     }
     return line("Congratulations, %s!", $name);
 }

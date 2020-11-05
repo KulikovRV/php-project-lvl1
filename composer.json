@@ -3,7 +3,8 @@
     "bin": ["bin/php-package",
             "bin/brain-even",
             "bin/brain-calc",
-            "bin/brain-gcd"
+            "bin/brain-gcd",
+            "bin/brain-progression"
     ],
     "authors": [
         {
@@ -19,6 +20,7 @@
     },
     "autoload": {
         "files": [
+            "src/games/Progression.php",
             "src/games/Gcd.php",
             "src/games/Calc.php",
             "src/games/Even.php",

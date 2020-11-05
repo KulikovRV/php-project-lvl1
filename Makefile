@@ -1,6 +1,9 @@
 install:
 		composer install
 
+brain-progression:
+		php bin/brain-progression
+
 brain-gcd:
 		php bin/brain-gcd
 
