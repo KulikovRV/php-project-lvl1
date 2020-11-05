@@ -1,5 +1,12 @@
 {
-    "name": "hexlet/code",
+    "name": "KulikovRV/brain-games",
+    "description": "study project for hexlet",
+    "type": "project",
+    "keywords": [
+        "php",
+        "hexlet",
+        "brain-games"
+    ],
     "bin": ["bin/php-package",
             "bin/brain-even",
             "bin/brain-calc",
@@ -14,7 +21,6 @@
         }
     ],
     "license": "MIT",
-    "description": "study project for hexlet",
     "require": {
         "wp-cli/php-cli-tools": "^0.11.11",
         "ext-gmp": "*"
