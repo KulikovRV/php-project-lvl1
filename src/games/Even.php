@@ -6,7 +6,7 @@ use function cli\line;
 
 function printRulesEven()
 {
-    return line('Answer "yes" if the number is even, otherwise answer "no".');
+    line('Answer "yes" if the number is even, otherwise answer "no".');
 }
 
 function addQuestionEven()

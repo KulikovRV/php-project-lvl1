@@ -6,7 +6,7 @@ use function cli\line;
 
 function printRulesProgression()
 {
-    return line('What number is missing in the progression?');
+     line('What number is missing in the progression?');
 }
 
 function addQuestionProgression()

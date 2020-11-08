@@ -40,7 +40,7 @@ function runGame($game)
                     $winStreak++;
                 } else {
                     line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
-                    return line("Let's try again, %s!", $name);
+                    line("Let's try again, %s!", $name);
                 }
             }
             // no break
@@ -56,7 +56,7 @@ function runGame($game)
                     $winStreak++;
                 } else {
                     line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
-                    return line("Let's try again, %s!", $name);
+                    line("Let's try again, %s!", $name);
                 }
             }
             // no break
@@ -72,7 +72,7 @@ function runGame($game)
                     $winStreak++;
                 } else {
                     line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
-                    return line("Let's try again, %s!", $name);
+                    line("Let's try again, %s!", $name);
                 }
             }
             // no break
@@ -88,7 +88,7 @@ function runGame($game)
                     $winStreak++;
                 } else {
                     line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
-                    return line("Let's try again, %s!", $name);
+                    line("Let's try again, %s!", $name);
                 }
             }
             // no break
