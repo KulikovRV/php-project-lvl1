@@ -6,7 +6,7 @@ use function cli\line;
 
 function printRulesGcd()
 {
-     line('Find the greatest common divisor of given numbers.');
+      line('Find the greatest common divisor of given numbers.');
 }
 
 function addQuestionGcd()
