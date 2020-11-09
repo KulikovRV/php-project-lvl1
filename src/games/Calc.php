@@ -6,7 +6,7 @@ use function cli\line;
 
 function printRulesCalc()
 {
-    return line('What is the result of the expression?');
+    line('What is the result of the expression?');
 }
 
 function addQuestionCalc()
