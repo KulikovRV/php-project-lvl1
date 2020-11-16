@@ -2,19 +2,31 @@
 
 namespace Brain\Games\Even;
 
-use function cli\line;
+use function Brain\Games\Engine\runGame;
 
-function printRulesEven()
+function runEvenGame()
 {
-    line('Answer "yes" if the number is even, otherwise answer "no".');
+    $rule = getRulesEven();
+    $answerAndQuestion = getQuestionAndAnswerEven();
+    return runGame($rule, $answerAndQuestion);
 }
 
-function addQuestionEven()
+function getRulesEven()
 {
-    return rand(1, 99);
+    return 'Answer "yes" if the number is even, otherwise answer "no".';
 }
 
-function calculateCorrectAnswerEven($question)
+function getQuestionAndAnswerEven()
 {
-    return $question % 2 === 0 ? 'yes' : 'no';
+    $questions = [];
+    $answers = [];
+    $countOfQuestionsAndAnswers = 3;
+
+    while ($countOfQuestionsAndAnswers > 0) {
+        $randNumber = rand(1, 99);
+        $questions[] = $randNumber;
+        $answers[] = $randNumber % 2 === 0 ? 'yes' : 'no';
+        $countOfQuestionsAndAnswers--;
+    }
+    return [$questions, $answers];
 }

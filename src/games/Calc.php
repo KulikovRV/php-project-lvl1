@@ -2,35 +2,43 @@
 
 namespace Brain\Games\Calc;
 
-use function cli\line;
+use function Brain\Games\Engine\runGame;
 
-function printRulesCalc()
+function runCalcGame()
 {
-    line('What is the result of the expression?');
+    $rule = getRulesCalc();
+    $answerAndQuestion = getQuestionAndAnswerCalc();
+    return runGame($rule, $answerAndQuestion);
 }
 
-function addQuestionCalc()
+function getRulesCalc()
 {
+    return 'What is the result of the expression?';
+}
+
+function getQuestionAndAnswerCalc()
+{
+    $questions = [];
+    $answers = [];
+    $countOfQuestionsAndAnswers = 3;
     $operators = ['+', '-', '*'];
-    $randIndex = array_rand($operators);
-    $randOperator = $operators[$randIndex];
-    $firstRandNumber = rand(1, 99);
-    $secondRandNumber = rand(1, 99);
-    return "{$firstRandNumber} {$randOperator} {$secondRandNumber}";
-}
 
-function calculateCorrectAnswerCalc($question)
-{
-    $array = explode(" ", $question);
-    $operator = $array[1];
-    $firstNumber = $array[0];
-    $secondNumber = $array[2];
+    while ($countOfQuestionsAndAnswers > 0) {
+        $randIndex = array_rand($operators);
+        $randOperator = $operators[$randIndex];
+        $firstRandNumber = rand(1, 99);
+        $secondRandNumber = rand(1, 99);
+        $questions[] = "{$firstRandNumber} {$randOperator} {$secondRandNumber}";
 
-    if ($operator === '+') {
-        return $firstNumber + $secondNumber;
-    } elseif ($operator === '-') {
-        return $firstNumber - $secondNumber;
-    } elseif ($operator === '*') {
-        return $firstNumber * $secondNumber;
+        if ($randOperator === '+') {
+            $answers[] = $firstRandNumber + $secondRandNumber;
+        } elseif ($randOperator === '-') {
+            $answers[] = $firstRandNumber - $secondRandNumber;
+        } elseif ($randOperator === '*') {
+            $answers[] = $firstRandNumber * $secondRandNumber;
+        }
+        $countOfQuestionsAndAnswers--;
     }
+
+    return [$questions, $answers];
 }
