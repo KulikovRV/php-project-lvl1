@@ -2,19 +2,37 @@
 
 namespace Brain\Games\Prime;
 
-use function cli\line;
+use function Brain\Games\Engine\runGame;
 
-function printRulesPrime()
+function runPrimeGame()
 {
-     line('Answer "yes" if given number is prime. Otherwise answer "no".');
+    $rule = getRulesPrime();
+    $answerAndQuestion = getQuestionAndAnswerPrime();
+    return runGame($rule, $answerAndQuestion);
 }
 
-function addQuestionPrime()
+function getRulesPrime()
 {
-    return rand(1, 99);
+     return'Answer "yes" if given number is prime. Otherwise answer "no".';
 }
 
-function calculateCorrectAnswerPrime($question)
+function getQuestionAndAnswerPrime()
+{
+    $questions = [];
+    $answers = [];
+    $countOfQuestionsAndAnswers = 3;
+
+    while ($countOfQuestionsAndAnswers > 0) {
+        $randNumber = rand(1, 99);
+        $questions[] = $randNumber;
+        $answers[] = getAnswerPrime($randNumber);
+        $countOfQuestionsAndAnswers--;
+    }
+
+    return [$questions, $answers];
+}
+
+function getAnswerPrime($question)
 {
     if ($question < 2) {
         return 'no';

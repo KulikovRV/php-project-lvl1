@@ -21,11 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b9c337ee-d577-4ce2-ae00-0d7dc24ff1a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/brain-calc" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-calc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/brain-even" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-even" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Engine.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/brain-gcd" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-gcd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/brain-prime" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-prime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/brain-progression" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-progression" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/games/Calc.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/Calc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/Even.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/Even.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/Gcd.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/Gcd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/Prime.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/Prime.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/Progression.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/Progression.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,9 +133,10 @@
       <screen x="0" y="23" width="1370" height="877" />
     </state>
     <state x="422" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1370.877@0.23.1370.877" timestamp="1604091533388" />
-    <state x="422" y="223" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605557934813">
-      <screen x="0" y="23" width="1370" height="877" />
+    <state x="444" y="205" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605620963887">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="444" y="205" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1605620963887" />
     <state x="422" y="223" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1370.877@0.23.1370.877" timestamp="1605557934813" />
     <state x="439" y="381" key="ComposerInitDialogKey" timestamp="1603911729058">
       <screen x="0" y="23" width="1370" height="877" />

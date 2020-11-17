@@ -2,24 +2,32 @@
 
 namespace Brain\Games\Gcd;
 
-use function cli\line;
+use function Brain\Games\Engine\runGame;
 
-function printRulesGcd()
+function runGcdGame()
 {
-      line('Find the greatest common divisor of given numbers.');
+    $rule = getRulesGcd();
+    $answerAndQuestion = getQuestionAndAnswerGcd();
+    return runGame($rule, $answerAndQuestion);
 }
 
-function addQuestionGcd()
+function getRulesGcd()
 {
-    $firstRandNumber = rand(1, 99);
-    $secondRandNumber = rand(1, 99);
-    return "{$firstRandNumber} {$secondRandNumber}";
+      return 'Find the greatest common divisor of given numbers.';
 }
 
-function calculateCorrectAnswerGcd($question)
+function getQuestionAndAnswerGcd()
 {
-    $array = explode(" ", $question);
-    $firstNumber = $array[0];
-    $secondNumber = $array[1];
-    return gmp_gcd($firstNumber, $secondNumber);
+    $questions = [];
+    $answers = [];
+    $countOfQuestionsAndAnswers = 3;
+
+    while ($countOfQuestionsAndAnswers > 0) {
+        $firstRandNumber = rand(1, 99);
+        $secondRandNumber = rand(1, 99);
+        $questions[] =  "{$firstRandNumber} {$secondRandNumber}";
+        $answers[] = gmp_gcd($firstRandNumber, $secondRandNumber);
+        $countOfQuestionsAndAnswers--;
+    }
+    return [$questions, $answers];
 }

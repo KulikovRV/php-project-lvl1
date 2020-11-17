@@ -28,17 +28,23 @@ function getQuestionAndAnswerCalc()
         $randOperator = $operators[$randIndex];
         $firstRandNumber = rand(1, 99);
         $secondRandNumber = rand(1, 99);
-        $questions[] = "{$firstRandNumber} {$randOperator} {$secondRandNumber}";
 
-        if ($randOperator === '+') {
-            $answers[] = $firstRandNumber + $secondRandNumber;
-        } elseif ($randOperator === '-') {
-            $answers[] = $firstRandNumber - $secondRandNumber;
-        } elseif ($randOperator === '*') {
-            $answers[] = $firstRandNumber * $secondRandNumber;
-        }
+        $questions[] = "{$firstRandNumber} {$randOperator} {$secondRandNumber}";
+        $answers[] = getAnswers($firstRandNumber, $randOperator, $secondRandNumber);
+
         $countOfQuestionsAndAnswers--;
     }
 
     return [$questions, $answers];
+}
+
+function getAnswers($firstRandNumber, $randOperator, $secondRandNumber)
+{
+    if ($randOperator === '+') {
+        return $firstRandNumber + $secondRandNumber;
+    } elseif ($randOperator === '-') {
+        return  $firstRandNumber - $secondRandNumber;
+    } elseif ($randOperator === '*') {
+        return  $firstRandNumber * $secondRandNumber;
+    }
 }
