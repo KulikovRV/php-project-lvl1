@@ -12,11 +12,13 @@ function runGame($rule, $questionsAndAnswers)
     line("Hello, %s!", $name);
     line($rule);
 
-    $countOfQuestions = count($questionsAndAnswers[0]);
-    $nestedArrayIndex = 0;
-    while ($countOfQuestions > 0) {
-        $question = $questionsAndAnswers[0][$nestedArrayIndex];
-        $correctAnswer = $questionsAndAnswers[1][$nestedArrayIndex];
+    $countOfRound = count($questionsAndAnswers);
+    $currentRound = 0;
+
+    while ($currentRound < $countOfRound) {
+        $currentQA = $questionsAndAnswers[$currentRound];
+        $question = $currentQA['question'];
+        $correctAnswer = $currentQA['correctAnswer'];
         line("Question: %s", $question);
         $answer = prompt('Your answer');
 
@@ -26,8 +28,7 @@ function runGame($rule, $questionsAndAnswers)
             return;
         }
         line('Correct!');
-        $countOfQuestions--;
-        $nestedArrayIndex++;
+        $currentRound++;
     }
 
     line("You Win!");

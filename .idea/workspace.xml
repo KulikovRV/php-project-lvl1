@@ -23,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Engine.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/games/Even.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/Even.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/Progression.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/Progression.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,14 +63,18 @@
       <recent name="$PROJECT_DIR$/src/games" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.Even.php">
     <configuration name="phpcs" type="ComposerRunConfigurationType" factoryName="Composer Script" temporary="true">
       <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
       <option name="script" value="phpcs" />
       <method v="2" />
     </configuration>
+    <configuration name="Even.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/games/Even.php">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.Even.php" />
         <item itemvalue="Composer Script.phpcs" />
       </list>
     </recent_temporary>

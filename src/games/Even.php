@@ -7,22 +7,22 @@ use function Brain\Games\Engine\runGame;
 function runEvenGame()
 {
     $rule = 'Answer "yes" if the number is even, otherwise answer "no".';
-    $answerAndQuestion = getQuestionAndAnswerEven();
-    return runGame($rule, $answerAndQuestion);
+    $answersAndQuestions = getQuestionsAndAnswersEven();
+    return runGame($rule, $answersAndQuestions);
 }
 
-function getQuestionAndAnswerEven()
+function getQuestionsAndAnswersEven()
 {
-    $questions = [];
-    $answers = [];
+    $questionsAndAnswers = [];
     $countOfQuestionsAndAnswers = 3;
 
     for ($i = 0; $i < $countOfQuestionsAndAnswers; $i++) {
         $randNumber = rand(1, 99);
-        $questions[] = $randNumber;
-        $answers[] = isEven($randNumber) ? 'yes' : 'no';
+        $questionsAndAnswers[$i]['question'] = $randNumber;
+        $questionsAndAnswers[$i]['correctAnswer'] = isEven($randNumber) ? 'yes' : 'no';
     }
-    return [$questions, $answers];
+
+    return $questionsAndAnswers;
 }
 
 function isEven($number)
