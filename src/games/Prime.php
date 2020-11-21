@@ -6,14 +6,9 @@ use function Brain\Games\Engine\runGame;
 
 function runPrimeGame()
 {
-    $rule = getRulesPrime();
+    $rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $answerAndQuestion = getQuestionAndAnswerPrime();
     return runGame($rule, $answerAndQuestion);
-}
-
-function getRulesPrime()
-{
-     return'Answer "yes" if given number is prime. Otherwise answer "no".';
 }
 
 function getQuestionAndAnswerPrime()

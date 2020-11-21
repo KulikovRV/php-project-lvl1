@@ -6,14 +6,9 @@ use function Brain\Games\Engine\runGame;
 
 function runEvenGame()
 {
-    $rule = getRulesEven();
+    $rule = 'Answer "yes" if the number is even, otherwise answer "no".';
     $answerAndQuestion = getQuestionAndAnswerEven();
     return runGame($rule, $answerAndQuestion);
-}
-
-function getRulesEven()
-{
-    return 'Answer "yes" if the number is even, otherwise answer "no".';
 }
 
 function getQuestionAndAnswerEven()

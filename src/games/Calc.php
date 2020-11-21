@@ -6,14 +6,9 @@ use function Brain\Games\Engine\runGame;
 
 function runCalcGame()
 {
-    $rule = getRulesCalc();
+    $rule = 'What is the result of the expression?';
     $answerAndQuestion = getQuestionAndAnswerCalc();
     return runGame($rule, $answerAndQuestion);
-}
-
-function getRulesCalc()
-{
-    return 'What is the result of the expression?';
 }
 
 function getQuestionAndAnswerCalc()

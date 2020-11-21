@@ -6,14 +6,9 @@ use function Brain\Games\Engine\runGame;
 
 function runGcdGame()
 {
-    $rule = getRulesGcd();
+    $rule = 'Find the greatest common divisor of given numbers.';
     $answerAndQuestion = getQuestionAndAnswerGcd();
     return runGame($rule, $answerAndQuestion);
-}
-
-function getRulesGcd()
-{
-      return 'Find the greatest common divisor of given numbers.';
 }
 
 function getQuestionAndAnswerGcd()

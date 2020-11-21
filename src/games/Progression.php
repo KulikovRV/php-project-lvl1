@@ -6,14 +6,9 @@ use function Brain\Games\Engine\runGame;
 
 function runProgressionGame()
 {
-    $rule = getRulesProgression();
+    $rule = 'What number is missing in the progression?';
     $answerAndQuestion = getQuestionAndAnswersProgression();
     return runGame($rule, $answerAndQuestion);
-}
-
-function getRulesProgression()
-{
-     return 'What number is missing in the progression?';
 }
 
 function getQuestionAndAnswersProgression()
