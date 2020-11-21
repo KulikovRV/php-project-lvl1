@@ -5,24 +5,23 @@ namespace Brain\Games\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function runGame($rule, $questionAndAnswer)
+function runGame($rule, $questionsAndAnswers)
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line($rule);
 
-    $winStreak = 0;
-    $countOfGameRounds = 3;
+    $countOfQuestions = count($questionsAndAnswers[0]);
     $nestedArrayIndex = 0;
-    while ($winStreak < $countOfGameRounds) {
-        $question = $questionAndAnswer[0][$nestedArrayIndex];
-        $correctAnswer = $questionAndAnswer[1][$nestedArrayIndex];
+    while ($countOfQuestions > 0) {
+        $question = $questionsAndAnswers[0][$nestedArrayIndex];
+        $correctAnswer = $questionsAndAnswers[1][$nestedArrayIndex];
         line("Question: %s", $question);
         $answer = prompt('Your answer');
         if ($answer == $correctAnswer) {
             line('Correct!');
-            $winStreak++;
+            $countOfQuestions--;
             $nestedArrayIndex++;
         } else {
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
