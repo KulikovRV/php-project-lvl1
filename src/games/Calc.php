@@ -3,6 +3,7 @@
 namespace Brain\Games\Calc;
 
 use function Brain\Games\Engine\runGame;
+use function cli\line;
 
 function runCalcGame()
 {
@@ -33,11 +34,14 @@ function getQuestionAndAnswerCalc()
 
 function getAnswerCalc($firstRandNumber, $randOperator, $secondRandNumber)
 {
-    if ($randOperator === '+') {
-        return $firstRandNumber + $secondRandNumber;
-    } elseif ($randOperator === '-') {
-        return  $firstRandNumber - $secondRandNumber;
-    } elseif ($randOperator === '*') {
-        return  $firstRandNumber * $secondRandNumber;
+    switch ($randOperator) {
+        case '+':
+            return $firstRandNumber + $secondRandNumber;
+        case '-':
+            return $firstRandNumber - $secondRandNumber;
+        case '*':
+            return $firstRandNumber * $secondRandNumber;
+        default:
+            line('Неизвестный оператор: %s', $randOperator);
     }
 }
