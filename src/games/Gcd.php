@@ -17,12 +17,12 @@ function getQuestionAndAnswerGcd()
     $answers = [];
     $countOfQuestionsAndAnswers = 3;
 
-    while ($countOfQuestionsAndAnswers > 0) {
+    for ($i = 0; $i < $countOfQuestionsAndAnswers; $i++) {
         $firstRandNumber = rand(1, 99);
         $secondRandNumber = rand(1, 99);
         $questions[] =  "{$firstRandNumber} {$secondRandNumber}";
         $answers[] = gmp_gcd($firstRandNumber, $secondRandNumber);
-        $countOfQuestionsAndAnswers--;
     }
+
     return [$questions, $answers];
 }

@@ -17,11 +17,10 @@ function getQuestionAndAnswerEven()
     $answers = [];
     $countOfQuestionsAndAnswers = 3;
 
-    while ($countOfQuestionsAndAnswers > 0) {
+    for ($i = 0; $i < $countOfQuestionsAndAnswers; $i++) {
         $randNumber = rand(1, 99);
         $questions[] = $randNumber;
         $answers[] = $randNumber % 2 === 0 ? 'yes' : 'no';
-        $countOfQuestionsAndAnswers--;
     }
     return [$questions, $answers];
 }

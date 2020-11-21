@@ -18,7 +18,7 @@ function getQuestionAndAnswerCalc()
     $countOfQuestionsAndAnswers = 3;
     $operators = ['+', '-', '*'];
 
-    while ($countOfQuestionsAndAnswers > 0) {
+    for ($i = 0; $i < $countOfQuestionsAndAnswers; $i++) {
         $randIndex = array_rand($operators);
         $randOperator = $operators[$randIndex];
         $firstRandNumber = rand(1, 99);
@@ -26,8 +26,6 @@ function getQuestionAndAnswerCalc()
 
         $questions[] = "{$firstRandNumber} {$randOperator} {$secondRandNumber}";
         $answers[] = getAnswers($firstRandNumber, $randOperator, $secondRandNumber);
-
-        $countOfQuestionsAndAnswers--;
     }
 
     return [$questions, $answers];

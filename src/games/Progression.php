@@ -17,7 +17,7 @@ function getQuestionAndAnswersProgression()
     $answers = [];
     $countOfQuestionsAndAnswers = 3;
 
-    while ($countOfQuestionsAndAnswers > 0) {
+    for ($i = 0; $i < $countOfQuestionsAndAnswers; $i++) {
         $progression = [];
         $randStartValue = rand(1, 99);
         $randStep = rand(1, 10);
@@ -32,8 +32,6 @@ function getQuestionAndAnswersProgression()
 
         $progression[$randIndex] = '..';
         $questions[] = implode(" ", $progression);
-
-        $countOfQuestionsAndAnswers--;
     }
 
     return [$questions, $answers];

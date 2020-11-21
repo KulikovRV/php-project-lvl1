@@ -17,11 +17,10 @@ function getQuestionAndAnswerPrime()
     $answers = [];
     $countOfQuestionsAndAnswers = 3;
 
-    while ($countOfQuestionsAndAnswers > 0) {
+    for ($i = 0; $i < $countOfQuestionsAndAnswers; $i++) {
         $randNumber = rand(1, 99);
         $questions[] = $randNumber;
         $answers[] = getAnswerPrime($randNumber);
-        $countOfQuestionsAndAnswers--;
     }
 
     return [$questions, $answers];
