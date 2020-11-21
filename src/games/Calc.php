@@ -25,13 +25,13 @@ function getQuestionAndAnswerCalc()
         $secondRandNumber = rand(1, 99);
 
         $questions[] = "{$firstRandNumber} {$randOperator} {$secondRandNumber}";
-        $answers[] = getAnswers($firstRandNumber, $randOperator, $secondRandNumber);
+        $answers[] = getAnswerCalc($firstRandNumber, $randOperator, $secondRandNumber);
     }
 
     return [$questions, $answers];
 }
 
-function getAnswers($firstRandNumber, $randOperator, $secondRandNumber)
+function getAnswerCalc($firstRandNumber, $randOperator, $secondRandNumber)
 {
     if ($randOperator === '+') {
         return $firstRandNumber + $secondRandNumber;
