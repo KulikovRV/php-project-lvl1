@@ -8,14 +8,13 @@ use function cli\line;
 function runCalcGame()
 {
     $rule = 'What is the result of the expression?';
-    $answerAndQuestion = getQuestionAndAnswerCalc();
-    return runGame($rule, $answerAndQuestion);
+    $answersAndQuestions = getQuestionsAndAnswersCalc();
+    return runGame($rule, $answersAndQuestions);
 }
 
-function getQuestionAndAnswerCalc()
+function getQuestionsAndAnswersCalc()
 {
-    $questions = [];
-    $answers = [];
+    $questionsAndAnswers = [];
     $countOfQuestionsAndAnswers = 3;
     $operators = ['+', '-', '*'];
 
@@ -25,11 +24,11 @@ function getQuestionAndAnswerCalc()
         $firstRandNumber = rand(1, 99);
         $secondRandNumber = rand(1, 99);
 
-        $questions[] = "{$firstRandNumber} {$randOperator} {$secondRandNumber}";
-        $answers[] = getAnswerCalc($firstRandNumber, $randOperator, $secondRandNumber);
+        $questionsAndAnswers[$i]['question'] = "{$firstRandNumber} {$randOperator} {$secondRandNumber}";
+        $questionsAndAnswers[$i]['correctAnswer'] = getAnswerCalc($firstRandNumber, $randOperator, $secondRandNumber);
     }
 
-    return [$questions, $answers];
+    return $questionsAndAnswers;
 }
 
 function getAnswerCalc($firstRandNumber, $randOperator, $secondRandNumber)
@@ -42,6 +41,6 @@ function getAnswerCalc($firstRandNumber, $randOperator, $secondRandNumber)
         case '*':
             return $firstRandNumber * $secondRandNumber;
         default:
-            line('Неизвестный оператор: %s', $randOperator);
+            line('Unknown operator: %s', $randOperator);
     }
 }
