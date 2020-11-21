@@ -19,15 +19,16 @@ function runGame($rule, $questionsAndAnswers)
         $correctAnswer = $questionsAndAnswers[1][$nestedArrayIndex];
         line("Question: %s", $question);
         $answer = prompt('Your answer');
-        if ($answer == $correctAnswer) {
-            line('Correct!');
-            $countOfQuestions--;
-            $nestedArrayIndex++;
-        } else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
-            return line("Let's try again, %s!", $name);
+
+        if ($answer !== $correctAnswer) {
+            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
+            line("Let's try again, %s!", $name);
+            return null;
         }
+        line('Correct!');
+        $countOfQuestions--;
+        $nestedArrayIndex++;
     }
 
-    return print_r("You Win!\n");
+    line("You Win!");
 }
