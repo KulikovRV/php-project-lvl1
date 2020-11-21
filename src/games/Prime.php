@@ -7,23 +7,22 @@ use function Brain\Games\Engine\runGame;
 function runPrimeGame()
 {
     $rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-    $answerAndQuestion = getQuestionAndAnswerPrime();
-    return runGame($rule, $answerAndQuestion);
+    $answersAndQuestions = getQuestionsAndAnswersPrime();
+    return runGame($rule, $answersAndQuestions);
 }
 
-function getQuestionAndAnswerPrime()
+function getQuestionsAndAnswersPrime()
 {
-    $questions = [];
-    $answers = [];
+    $questionsAndAnswers = [];
     $countOfQuestionsAndAnswers = 3;
 
     for ($i = 0; $i < $countOfQuestionsAndAnswers; $i++) {
         $randNumber = rand(1, 99);
-        $questions[] = $randNumber;
-        $answers[] = getAnswerPrime($randNumber);
+        $questionsAndAnswers[$i]['question'] = $randNumber;
+        $questionsAndAnswers[$i]['correctAnswer'] = getAnswerPrime($randNumber);
     }
 
-    return [$questions, $answers];
+    return $questionsAndAnswers;
 }
 
 function getAnswerPrime($question)
