@@ -7,14 +7,13 @@ use function Brain\Games\Engine\runGame;
 function runProgressionGame()
 {
     $rule = 'What number is missing in the progression?';
-    $answerAndQuestion = getQuestionAndAnswersProgression();
-    return runGame($rule, $answerAndQuestion);
+    $answersAndQuestions = getQuestionsAndAnswersProgression();
+    return runGame($rule, $answersAndQuestions);
 }
 
-function getQuestionAndAnswersProgression()
+function getQuestionsAndAnswersProgression()
 {
-    $questions = [];
-    $answers = [];
+    $questionsAndAnswers = [];
     $countOfQuestionsAndAnswers = 3;
 
     for ($i = 0; $i < $countOfQuestionsAndAnswers; $i++) {
@@ -23,12 +22,12 @@ function getQuestionAndAnswersProgression()
         $randLength = rand(5, 10);
         $progression = getProgression($randStartValue, $randStep, $randLength);
         $randIndex = array_rand($progression);
-        $answers[] = $progression[$randIndex];
+        $questionsAndAnswers[$i]['correctAnswer'] = $progression[$randIndex];
         $progression[$randIndex] = '..';
-        $questions[] = implode(" ", $progression);
+        $questionsAndAnswers[$i]['question'] = implode(" ", $progression);
     }
 
-    return [$questions, $answers];
+    return $questionsAndAnswers;
 }
 
 function getProgression($startValue, $step, $length)
