@@ -1,6 +1,6 @@
 <?php
 
-namespace Brain\Games\Even;
+namespace Brain\Games\games\Even;
 
 use function Brain\Games\Engine\runGame;
 
@@ -20,7 +20,12 @@ function getQuestionAndAnswerEven()
     for ($i = 0; $i < $countOfQuestionsAndAnswers; $i++) {
         $randNumber = rand(1, 99);
         $questions[] = $randNumber;
-        $answers[] = $randNumber % 2 === 0 ? 'yes' : 'no';
+        $answers[] = isEven($randNumber) ? 'yes' : 'no';
     }
     return [$questions, $answers];
+}
+
+function isEven($number)
+{
+    return $number % 2 === 0;
 }

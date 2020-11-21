@@ -10,6 +10,6 @@
      require_once $autoloadPath2;
  }
 
-use function Brain\Games\Progression\runProgressionGame;
+use function Brain\Games\games\Progression\runProgressionGame;
 
 runProgressionGame();

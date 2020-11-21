@@ -23,7 +23,7 @@ function runGame($rule, $questionsAndAnswers)
         if ($answer != $correctAnswer) {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
             line("Let's try again, %s!", $name);
-            return null;
+            return;
         }
         line('Correct!');
         $countOfQuestions--;
