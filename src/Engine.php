@@ -13,8 +13,7 @@ function runGame($rule, $questionsAndAnswers)
     line($rule);
 
     foreach ($questionsAndAnswers as $questionAnswer) {
-        $question = $questionAnswer['question'];
-        $correctAnswer = $questionAnswer['correctAnswer'];
+        ['question' => $question, 'correctAnswer' => $correctAnswer] = $questionAnswer;
         line("Question: %s", $question);
         $answer = prompt('Your answer');
 
