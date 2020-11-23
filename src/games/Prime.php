@@ -14,9 +14,9 @@ function runPrimeGame()
 function getQuestionsAndAnswersPrime()
 {
     $questionsAndAnswers = [];
-    $countOfQuestionsAndAnswers = 3;
+    $countOfQA = 3;
 
-    for ($i = 0; $i < $countOfQuestionsAndAnswers; $i++) {
+    for ($i = 0; $i < $countOfQA; $i++) {
         $randNumber = rand(1, 99);
         $questionsAndAnswers[$i]['question'] = $randNumber;
         $questionsAndAnswers[$i]['correctAnswer'] = getAnswerPrime($randNumber);

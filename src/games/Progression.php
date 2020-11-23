@@ -14,9 +14,9 @@ function runProgressionGame()
 function getQuestionsAndAnswersProgression()
 {
     $questionsAndAnswers = [];
-    $countOfQuestionsAndAnswers = 3;
+    $countOfQA = 3;
 
-    for ($i = 0; $i < $countOfQuestionsAndAnswers; $i++) {
+    for ($i = 0; $i < $countOfQA; $i++) {
         $randStartValue = rand(1, 99);
         $randStep = rand(1, 10);
         $randLength = rand(5, 10);

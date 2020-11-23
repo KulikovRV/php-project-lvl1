@@ -14,9 +14,9 @@ function runGcdGame()
 function getQuestionsAndAnswersGcd()
 {
     $questionsAndAnswers = [];
-    $countOfQuestionsAndAnswers = 3;
+    $countOfQA = 3;
 
-    for ($i = 0; $i < $countOfQuestionsAndAnswers; $i++) {
+    for ($i = 0; $i < $countOfQA; $i++) {
         $firstRandNumber = rand(1, 99);
         $secondRandNumber = rand(1, 99);
         $questionsAndAnswers[$i]['question'] =  "{$firstRandNumber} {$secondRandNumber}";

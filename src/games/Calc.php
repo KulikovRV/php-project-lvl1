@@ -15,10 +15,10 @@ function runCalcGame()
 function getQuestionsAndAnswersCalc()
 {
     $questionsAndAnswers = [];
-    $countOfQuestionsAndAnswers = 3;
+    $countOfQA = 3;
     $operators = ['+', '-', '*'];
 
-    for ($i = 0; $i < $countOfQuestionsAndAnswers; $i++) {
+    for ($i = 0; $i < $countOfQA; $i++) {
         $randIndex = array_rand($operators);
         $randOperator = $operators[$randIndex];
         $firstRandNumber = rand(1, 99);
