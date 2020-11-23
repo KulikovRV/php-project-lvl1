@@ -12,13 +12,9 @@ function runGame($rule, $questionsAndAnswers)
     line("Hello, %s!", $name);
     line($rule);
 
-    $countOfRound = count($questionsAndAnswers);
-    $currentRound = 0;
-
-    while ($currentRound < $countOfRound) {
-        $currentQA = $questionsAndAnswers[$currentRound];
-        $question = $currentQA['question'];
-        $correctAnswer = $currentQA['correctAnswer'];
+    foreach ($questionsAndAnswers as $questionAnswer) {
+        $question = $questionAnswer['question'];
+        $correctAnswer = $questionAnswer['correctAnswer'];
         line("Question: %s", $question);
         $answer = prompt('Your answer');
 
@@ -28,7 +24,6 @@ function runGame($rule, $questionsAndAnswers)
             return;
         }
         line('Correct!');
-        $currentRound++;
     }
 
     line("You Win!");
