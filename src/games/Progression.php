@@ -26,7 +26,7 @@ function getQuestionsAndAnswersProgression()
         $progression[$randIndex] = '..';
         $questionsAndAnswers[$i] = [
             'correctAnswer' => $hideNumber,
-            'question'=> implode(" ", $progression)
+            'question' => implode(" ", $progression)
         ];
     }
 

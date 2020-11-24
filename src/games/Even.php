@@ -19,7 +19,7 @@ function getQuestionsAndAnswersEven()
     for ($i = 0; $i < $countOfQA; $i++) {
         $randNumber = rand(1, 99);
         $questionsAndAnswers[$i] = [
-            'question'=> $randNumber,
+            'question' => $randNumber,
             'correctAnswer' => isEven($randNumber) ? 'yes' : 'no'
         ];
     }
