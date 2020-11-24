@@ -23,9 +23,10 @@ function getQuestionsAndAnswersCalc()
         $randOperator = $operators[$randIndex];
         $firstRandNumber = rand(1, 99);
         $secondRandNumber = rand(1, 99);
-
-        $questionsAndAnswers[$i]['question'] = "{$firstRandNumber} {$randOperator} {$secondRandNumber}";
-        $questionsAndAnswers[$i]['correctAnswer'] = getAnswerCalc($firstRandNumber, $randOperator, $secondRandNumber);
+        $questionsAndAnswers[$i] = [
+            'question'=> "{$firstRandNumber} {$randOperator} {$secondRandNumber}",
+            'correctAnswer' => getAnswerCalc($firstRandNumber, $randOperator, $secondRandNumber)
+        ];
     }
 
     return $questionsAndAnswers;

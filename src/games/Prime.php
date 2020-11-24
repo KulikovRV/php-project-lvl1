@@ -18,8 +18,10 @@ function getQuestionsAndAnswersPrime()
 
     for ($i = 0; $i < $countOfQA; $i++) {
         $randNumber = rand(1, 99);
-        $questionsAndAnswers[$i]['question'] = $randNumber;
-        $questionsAndAnswers[$i]['correctAnswer'] = getAnswerPrime($randNumber);
+        $questionsAndAnswers[$i] = [
+            'question'=> $randNumber,
+            'correctAnswer' => getAnswerPrime($randNumber)
+        ];
     }
 
     return $questionsAndAnswers;

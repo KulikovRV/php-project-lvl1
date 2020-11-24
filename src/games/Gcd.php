@@ -19,8 +19,10 @@ function getQuestionsAndAnswersGcd()
     for ($i = 0; $i < $countOfQA; $i++) {
         $firstRandNumber = rand(1, 99);
         $secondRandNumber = rand(1, 99);
-        $questionsAndAnswers[$i]['question'] =  "{$firstRandNumber} {$secondRandNumber}";
-        $questionsAndAnswers[$i]['correctAnswer'] = gmp_gcd($firstRandNumber, $secondRandNumber);
+        $questionsAndAnswers[$i] = [
+            'question'=> "{$firstRandNumber} {$secondRandNumber}",
+            'correctAnswer' => gmp_gcd($firstRandNumber, $secondRandNumber)
+        ];
     }
 
     return $questionsAndAnswers;

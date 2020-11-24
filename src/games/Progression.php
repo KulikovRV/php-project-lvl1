@@ -22,9 +22,12 @@ function getQuestionsAndAnswersProgression()
         $randLength = rand(5, 10);
         $progression = getProgression($randStartValue, $randStep, $randLength);
         $randIndex = array_rand($progression);
-        $questionsAndAnswers[$i]['correctAnswer'] = $progression[$randIndex];
+        $hideNumber = $progression[$randIndex];
         $progression[$randIndex] = '..';
-        $questionsAndAnswers[$i]['question'] = implode(" ", $progression);
+        $questionsAndAnswers[$i] = [
+            'correctAnswer' => $hideNumber,
+            'question'=> implode(" ", $progression)
+        ];
     }
 
     return $questionsAndAnswers;
