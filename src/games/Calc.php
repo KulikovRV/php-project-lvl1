@@ -25,23 +25,23 @@ function getQuestionsAndAnswersCalc()
         $secondRandNumber = rand(1, 99);
         $questionsAndAnswers[$i] = [
             'question'=> "{$firstRandNumber} {$randOperator} {$secondRandNumber}",
-            'correctAnswer' => getAnswerCalc($firstRandNumber, $randOperator, $secondRandNumber)
+            'correctAnswer' => calculate($firstRandNumber, $randOperator, $secondRandNumber)
         ];
     }
 
     return $questionsAndAnswers;
 }
 
-function getAnswerCalc($firstRandNumber, $randOperator, $secondRandNumber)
+function calculate($firstNumber, $operator, $secondNumber)
 {
-    switch ($randOperator) {
+    switch ($operator) {
         case '+':
-            return $firstRandNumber + $secondRandNumber;
+            return $firstNumber + $secondNumber;
         case '-':
-            return $firstRandNumber - $secondRandNumber;
+            return $firstNumber - $secondNumber;
         case '*':
-            return $firstRandNumber * $secondRandNumber;
+            return $firstNumber * $secondNumber;
         default:
-            line('Unknown operator: %s', $randOperator);
+            throw new Exception("Unknown operator $operator");
     }
 }
