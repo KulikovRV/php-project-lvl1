@@ -20,23 +20,24 @@ function getQuestionsAndAnswersPrime()
         $randNumber = rand(1, 99);
         $questionsAndAnswers[$i] = [
             'question'=> $randNumber,
-            'correctAnswer' => getAnswerPrime($randNumber)
+            'correctAnswer' => isPrime($randNumber) ? 'yes' : 'no'
         ];
     }
 
     return $questionsAndAnswers;
 }
 
-function getAnswerPrime($question)
+function isPrime($question)
 {
     if ($question < 2) {
-        return 'no';
+        return false;
     }
 
     for ($i = 2; $i <= $question / 2; $i++) {
         if ($question % $i == 0) {
-            return 'no';
+            return true;
         }
     }
-    return 'yes';
+
+    return false;
 }
