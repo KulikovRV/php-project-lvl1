@@ -36,10 +36,11 @@ function getQuestionsAndAnswersProgression()
 function getProgression($startValue, $step, $length)
 {
     $progression = [];
+    $number = $startValue;
 
     for ($i = 0; $i < $length; $i++) {
-        $progression[] = $startValue;
-        $startValue += $step;
+        $progression[] = $number;
+        $number += $step;
     }
 
     return $progression;
