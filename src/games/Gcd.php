@@ -21,7 +21,7 @@ function getQuestionsAndAnswersGcd()
         $secondRandNumber = rand(1, 99);
         $questionsAndAnswers[$i] = [
             'question' => "{$firstRandNumber} {$secondRandNumber}",
-            'correctAnswer' => gmp_gcd($firstRandNumber, $secondRandNumber)
+            'correctAnswer' => (string)gmp_gcd($firstRandNumber, $secondRandNumber)
         ];
     }
 
