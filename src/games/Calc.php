@@ -2,8 +2,9 @@
 
 namespace Brain\Games\games\Calc;
 
-use function Brain\Games\Engine\runGame;
 use Exception;
+
+use function Brain\Games\Engine\runGame;
 
 function runCalcGame()
 {
