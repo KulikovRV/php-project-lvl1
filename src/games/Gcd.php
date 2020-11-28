@@ -8,7 +8,7 @@ function runGcdGame()
 {
     $rule = 'Find the greatest common divisor of given numbers.';
     $answersAndQuestions = getQuestionsAndAnswersGcd();
-    return runGame($rule, $answersAndQuestions);
+    runGame($rule, $answersAndQuestions);
 }
 
 function getQuestionsAndAnswersGcd()

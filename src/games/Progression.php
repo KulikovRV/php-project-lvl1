@@ -8,7 +8,7 @@ function runProgressionGame()
 {
     $rule = 'What number is missing in the progression?';
     $answersAndQuestions = getQuestionsAndAnswersProgression();
-    return runGame($rule, $answersAndQuestions);
+    runGame($rule, $answersAndQuestions);
 }
 
 function getQuestionsAndAnswersProgression()

@@ -8,7 +8,7 @@ function runPrimeGame()
 {
     $rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $answersAndQuestions = getQuestionsAndAnswersPrime();
-    return runGame($rule, $answersAndQuestions);
+    runGame($rule, $answersAndQuestions);
 }
 
 function getQuestionsAndAnswersPrime()

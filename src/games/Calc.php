@@ -9,7 +9,7 @@ function runCalcGame()
 {
     $rule = 'What is the result of the expression?';
     $answersAndQuestions = getQuestionsAndAnswersCalc();
-    return runGame($rule, $answersAndQuestions);
+    runGame($rule, $answersAndQuestions);
 }
 
 function getQuestionsAndAnswersCalc()

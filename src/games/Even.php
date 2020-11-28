@@ -8,7 +8,7 @@ function runEvenGame()
 {
     $rule = 'Answer "yes" if the number is even, otherwise answer "no".';
     $answersAndQuestions = getQuestionsAndAnswersEven();
-    return runGame($rule, $answersAndQuestions);
+    runGame($rule, $answersAndQuestions);
 }
 
 function getQuestionsAndAnswersEven()
