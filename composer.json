@@ -7,12 +7,12 @@
         "hexlet",
         "brain-games"
     ],
-    "bin": ["bin/php-package.php",
-            "bin/brain-even.php",
-            "bin/brain-calc.php",
-            "bin/brain-gcd.php",
-            "bin/brain-progression.php",
-            "bin/brain-prime.php"
+    "bin": ["bin/php-package",
+            "bin/brain-even",
+            "bin/brain-calc",
+            "bin/brain-gcd",
+            "bin/brain-progression",
+            "bin/brain-prime"
     ],
     "authors": [
         {
