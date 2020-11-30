@@ -13,7 +13,6 @@ $ composer global require kulikov-rv/brain-games
 ```
 
 ## Games list
-* brain-games 
 * brain-even  
 * brain-calc 
 * brain-gcd 
@@ -21,4 +20,4 @@ $ composer global require kulikov-rv/brain-games
 * brain-progression 
 
 ## Game process example
-<a href="https://asciinema.org/a/h08QVHgXQvyEYbv4UvsRVCJ1N" target="_blank"><img src="https://asciinema.org/a/h08QVHgXQvyEYbv4UvsRVCJ1N.svg" /></a>
+<a href="https://asciinema.org/a/Wjn53OehKZ3IZHe2lOMXEgrK3" target="_blank"><img src="https://asciinema.org/a/Wjn53OehKZ3IZHe2lOMXEgrK3.svg" /></a>
