@@ -5,8 +5,6 @@
 ## About project
 A set of console mini-games. Project to learn PHP environment setup, maintainable architecture and code naming.
 
- [Read more about Hexlet (in Russian)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=php-package).
-
 ## Setup
 ```
 $ composer global require kulikov-rv/brain-games
